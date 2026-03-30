@@ -2,189 +2,187 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-    <title>Lambda Designs - Agência de Web Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lambda Design - Agência de Web Design</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
-<body>
-    <!-- CABEÇALHO -->
+<body class="page">
     <header class="header">
-        <div class="header__container">
-            <a href="#home" class="header__logo">Lambda Designs
-                <img src="img/logo.png" alt="Logo Lambda Designs" class="logo__img">
+        <div class="header__container container">
+            <a href="#home" class="header__logo">
+                <img src="img/logo.png" alt="Lambda Design" class="header__logo-img">
             </a>
             <nav class="header__nav">
                 <ul class="header__menu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#depoimentos">Depoimentos</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                    <li class="header__menu-item"><a href="#home" class="header__menu-link">Home</a></li>
+                    <li class="header__menu-item"><a href="#sobre" class="header__menu-link">Sobre</a></li>
+                    <li class="header__menu-item"><a href="#servicos" class="header__menu-link">Serviços</a></li>
+                    <li class="header__menu-item"><a href="#depoimentos" class="header__menu-link">Depoimentos</a></li>
+                    <li class="header__menu-item"><a href="#contato" class="header__menu-link">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- HOME - BANNER -->
-    <section id="home" class="hero">
-        <div class="hero__content">
-            <h2 class="hero__title">Criamos experiências digitais que <span>transformam negócios</span></h2>
-            <p class="hero__text">Design moderno, código limpo e foco no usuário. Sua marca merece o melhor.</p>
-            <a href="#contato" class="btn">Solicitar orçamento</a>
-        </div>
-    </section>
-
-    <!-- SOBRE NÓS -->
-    <section id="sobre" class="about">
-        <div class="container">
-            <h2 class="section__title">Sobre <span>Nós</span></h2>
-            <div class="about__grid">
-                <div class="about__content">
-                    <p class="about__text">A Lambda Designs nasceu em 2020 com a missão de ajudar empresas a crescerem através do design e da tecnologia. Acreditamos que um site bem feito é a principal ferramenta de conversão de qualquer negócio digital.</p>
-                    
-                    <div class="about__values">
-                        <h3>Nossos valores:</h3>
-                        <ul>
-                            <li>🎯 <strong>Foco no cliente</strong> - Sua necessidade é nossa prioridade</li>
-                            <li>💡 <strong>Inovação constante</strong> - Sempre atualizados</li>
-                            <li>🤝 <strong>Transparência</strong> - Você sabe cada passo</li>
-                            <li>🚀 <strong>Entregas no prazo</strong> - Compromisso com datas</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="about__stats">
-                    <div class="stat__card">
-                        <span class="stat__number">50+</span>
-                        <span class="stat__label">Projetos entregues</span>
-                    </div>
-                    <div class="stat__card">
-                        <span class="stat__number">30+</span>
-                        <span class="stat__label">Clientes felizes</span>
-                    </div>
-                    <div class="stat__card">
-                        <span class="stat__number">4+</span>
-                        <span class="stat__label">Anos de mercado</span>
-                    </div>
-                    <div class="stat__card">
-                        <span class="stat__number">100%</span>
-                        <span class="stat__label">Satisfação</span>
-                    </div>
-                </div>
+    <main class="main">
+        <!-- Hero -->
+        <section class="hero" id="home">
+            <div class="hero__content container">
+                <h1 class="hero__title">Criamos experiências digitais que <span class="hero__title-highlight">transformam negócios</span></h1>
+                <p class="hero__text">Design moderno, código limpo e foco no usuário. Sua marca merece o melhor.</p>
+                <a href="#contato" class="button button--primary">Solicitar orçamento</a>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- SERVIÇOS -->
-    <section id="servicos" class="services">
-        <div class="container">
-            <h2 class="section__title">Nossos <span>Serviços</span></h2>
-            <div class="services__grid">
-                <div class="service__card">
-                    <div class="service__icon">🎨</div>
-                    <h3>Design Gráfico</h3>
-                    <p>Identidade visual, logos, materiais impressos e design para redes sociais.</p>
-                </div>
-                <div class="service__card">
-                    <div class="service__icon">💻</div>
-                    <h3>Desenvolvimento Web</h3>
-                    <p>Sites institucionais, lojas virtuais e sistemas personalizados.</p>
-                </div>
-                <div class="service__card">
-                    <div class="service__icon">📱</div>
-                    <h3>Branding</h3>
-                    <p>Construção e fortalecimento de marcas com estratégia e criatividade.</p>
-                </div>
-                <div class="service__card">
-                    <div class="service__icon">📈</div>
-                    <h3>Marketing Digital</h3>
-                    <p>Estratégias de SEO, Google Ads e gestão de tráfego.</p>
-                </div>
-                <div class="service__card">
-                    <div class="service__icon">📝</div>
-                    <h3>UX/UI Design</h3>
-                    <p>Design de interface e experiência do usuário para produtos digitais.</p>
-                </div>
-                <div class="service__card">
-                    <div class="service__icon">📊</div>
-                    <h3>Consultoria</h3>
-                    <p>Análise e otimização de sites e estratégias digitais.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- DEPOIMENTOS -->
-    <section id="depoimentos" class="testimonials">
-        <div class="container">
-            <h2 class="section__title">O que nossos <span>clientes dizem</span></h2>
-            <div class="testimonials__grid">
-                <div class="testimonial__card">
-                    <div class="testimonial__quote">"</div>
-                    <p class="testimonial__text">A Lambda Design transformou completamente nossa presença online. O site ficou lindo e as vendas aumentaram 40% em 3 meses.</p>
-                    <div class="testimonial__author">
-                        <div class="testimonial__avatar">👤</div>
-                        <div>
-                            <h4>João Silva</h4>
-                            <p>CEO - TechStore</p>
+        <!-- Sobre -->
+        <section class="about" id="sobre">
+            <div class="container">
+                <h2 class="section-title">Sobre a <span class="section-title__highlight">Lambda Design</span></h2>
+                <div class="about__grid">
+                    <div class="about__content">
+                        <p class="about__text">A Lambda Design nasceu em 2020 com a missão de ajudar empresas a crescerem através do design e da tecnologia. Acreditamos que um site bem feito é a principal ferramenta de conversão de qualquer negócio digital.</p>
+                        <div class="about__values">
+                            <h3 class="about__values-title">Nossos valores:</h3>
+                            <ul class="about__values-list">
+                                <li class="about__value">🎯 <strong>Foco no cliente</strong> - Sua necessidade é nossa prioridade</li>
+                                <li class="about__value">💡 <strong>Inovação constante</strong> - Sempre atualizados</li>
+                                <li class="about__value">🤝 <strong>Transparência</strong> - Você sabe cada passo</li>
+                                <li class="about__value">🚀 <strong>Entregas no prazo</strong> - Compromisso com datas</li>
+                            </ul>
                         </div>
                     </div>
-                </div>
-                <div class="testimonial__card">
-                    <div class="testimonial__quote">"</div>
-                    <p class="testimonial__text">Equipe extremamente profissional e criativa. Entregaram o projeto antes do prazo e superaram expectativas.</p>
-                    <div class="testimonial__author">
-                        <div class="testimonial__avatar">👩‍💼</div>
-                        <div>
-                            <h4>Maria Santos</h4>
-                            <p>Fundadora - FoodApp</p>
+                    <div class="about__stats stats">
+                        <div class="stats__card">
+                            <span class="stats__number">50+</span>
+                            <span class="stats__label">Projetos entregues</span>
                         </div>
-                    </div>
-                </div>
-                <div class="testimonial__card">
-                    <div class="testimonial__quote">"</div>
-                    <p class="testimonial__text">O suporte pós-entrega é incrível! Sempre disponíveis para ajustes e melhorias. Recomendo demais!</p>
-                    <div class="testimonial__author">
-                        <div class="testimonial__avatar">👨‍💻</div>
-                        <div>
-                            <h4>Pedro Oliveira</h4>
-                            <p>Diretor - FitLife</p>
+                        <div class="stats__card">
+                            <span class="stats__number">30+</span>
+                            <span class="stats__label">Clientes felizes</span>
+                        </div>
+                        <div class="stats__card">
+                            <span class="stats__number">4+</span>
+                            <span class="stats__label">Anos de mercado</span>
+                        </div>
+                        <div class="stats__card">
+                            <span class="stats__number">100%</span>
+                            <span class="stats__label">Satisfação</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- CONTATO -->
-    <section id="contato" class="contact">
-        <div class="container">
-            <h2 class="section__title">Entre em <span>contato</span></h2>
-            <div class="contact__grid">
-                <div class="contact__info">
-                    <h3>Lambda Design</h3>
-                    <p>📍 Rua George Lacerda 80, Velha Blumenau SC</p>
-                    <p>📞 (11) 3333-4444</p>
-                    <p>📱 (11) 99999-9999</p>
-                    <p>✉️ contato@lambdadesign.com.br</p>
-                    <p>🕒 Seg a Sex: 9h às 18h | Sáb: 9h às 13h</p>
+        <!-- Serviços -->
+        <section class="services" id="servicos">
+            <div class="container">
+                <h2 class="section-title">Nossos <span class="section-title__highlight">Serviços</span></h2>
+                <div class="services__grid">
+                    <article class="service-card">
+                        <div class="service-card__icon">🎨</div>
+                        <h3 class="service-card__title">Design Gráfico</h3>
+                        <p class="service-card__text">Identidade visual, logos, materiais impressos e design para redes sociais.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-card__icon">💻</div>
+                        <h3 class="service-card__title">Desenvolvimento Web</h3>
+                        <p class="service-card__text">Sites institucionais, lojas virtuais e sistemas personalizados.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-card__icon">📱</div>
+                        <h3 class="service-card__title">Branding</h3>
+                        <p class="service-card__text">Construção e fortalecimento de marcas com estratégia e criatividade.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-card__icon">📈</div>
+                        <h3 class="service-card__title">Marketing Digital</h3>
+                        <p class="service-card__text">Estratégias de SEO, Google Ads e gestão de tráfego.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-card__icon">📝</div>
+                        <h3 class="service-card__title">UX/UI Design</h3>
+                        <p class="service-card__text">Design de interface e experiência do usuário para produtos digitais.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-card__icon">📊</div>
+                        <h3 class="service-card__title">Consultoria</h3>
+                        <p class="service-card__text">Análise e otimização de sites e estratégias digitais.</p>
+                    </article>
                 </div>
-                
-                <form class="contact__form">
-                    <h3>Envie sua mensagem</h3>
-                    <input type="text" placeholder="Seu nome" required>
-                    <input type="email" placeholder="Seu e-mail" required>
-                    <input type="text" placeholder="Assunto">
-                    <textarea placeholder="Sua mensagem" rows="4" required></textarea>
-                    <button type="submit" class="btn btn--full">Enviar mensagem</button>
-                </form>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- RODAPÉ -->
+        <!-- Depoimentos -->
+        <section class="testimonials" id="depoimentos">
+            <div class="container">
+                <h2 class="section-title">O que nossos <span class="section-title__highlight">clientes dizem</span></h2>
+                <div class="testimonials__grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__quote">"</div>
+                        <p class="testimonial-card__text">A Lambda Design transformou completamente nossa presença online. O site ficou lindo e as vendas aumentaram 40% em 3 meses.</p>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__avatar">👤</div>
+                            <div>
+                                <h4 class="testimonial-card__name">João Silva</h4>
+                                <p class="testimonial-card__role">CEO - TechStore</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__quote">"</div>
+                        <p class="testimonial-card__text">Equipe extremamente profissional e criativa. Entregaram o projeto antes do prazo e superaram expectativas.</p>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__avatar">👩‍💼</div>
+                            <div>
+                                <h4 class="testimonial-card__name">Maria Santos</h4>
+                                <p class="testimonial-card__role">Fundadora - FoodApp</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__quote">"</div>
+                        <p class="testimonial-card__text">O suporte pós-entrega é incrível! Sempre disponíveis para ajustes e melhorias. Recomendo demais!</p>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__avatar">👨‍💻</div>
+                            <div>
+                                <h4 class="testimonial-card__name">Pedro Oliveira</h4>
+                                <p class="testimonial-card__role">Diretor - FitLife</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section class="contact" id="contato">
+            <div class="container">
+                <h2 class="section-title">Entre em <span class="section-title__highlight">contato</span></h2>
+                <div class="contact__grid">
+                    <div class="contact__info">
+                        <h3 class="contact__title">Lambda Design</h3>
+                        <p class="contact__detail">📍 Av. Paulista, 1000 - São Paulo, SP</p>
+                        <p class="contact__detail">📞 (11) 3333-4444</p>
+                        <p class="contact__detail">📱 (11) 99999-9999</p>
+                        <p class="contact__detail">✉️ contato@lambdadesign.com.br</p>
+                        <p class="contact__detail">🕒 Seg a Sex: 9h às 18h | Sáb: 9h às 13h</p>
+                    </div>
+                    <form class="contact__form">
+                        <h3 class="contact__form-title">Envie sua mensagem</h3>
+                        <input type="text" class="contact__input" placeholder="Seu nome" required>
+                        <input type="email" class="contact__input" placeholder="Seu e-mail" required>
+                        <input type="text" class="contact__input" placeholder="Assunto">
+                        <textarea class="contact__textarea" placeholder="Sua mensagem" rows="4" required></textarea>
+                        <button type="submit" class="button button--full">Enviar mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer class="footer">
         <div class="container">
-            <p>© 2026 Lambda Design Agência de Web Design - Todos os direitos reservados.</p>
+            <p class="footer__text">© 2026 Lambda Design - Todos os direitos reservados.</p>
         </div>
     </footer>
 </body>
