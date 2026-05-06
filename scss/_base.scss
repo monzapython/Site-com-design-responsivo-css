@@ -1,0 +1,64 @@
+@use './variaveis' as *;
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HTML + BODY */
+html {
+    font-size: $espacamento-base;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font-family: $font-family-base;
+    color: $text;
+    line-height: 1.6;
+    background-color: $light;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* CONTAINER */
+.container {
+    width: 100%;
+    max-width: $container-max-width;
+    margin: 0 auto;
+    padding: $container-padding;
+}
+
+/* SEÇÕES GERAIS */
+section {
+    padding: 4rem 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* TÍTULOS DE SEÇÃO */
+.section-title {
+    text-align: center;
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    margin-bottom: calc($espacamento-base * 1.5);
+    line-height: 1.3;
+    color: $darker;
+
+    &__highlight {
+        color: $primary;
+        position: relative;
+        display: inline-block;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 10%;
+            width: 80%;
+            height: 3px;
+            background: $primary;
+        }
+    }
+}

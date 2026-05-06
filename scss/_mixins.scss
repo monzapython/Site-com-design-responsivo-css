@@ -1,0 +1,33 @@
+@use './variaveis' as *;
+
+// Mixin 1: Centralizar conteúdo com Flexbox
+@mixin flex-center($direction: row) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+// Mixin 2: Botão base (evita repetir código)
+@mixin button-base {
+    display: inline-block;
+    padding: 0.8em 2em;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: $border-radius-round;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+// Mixin 3: Efeito de elevação no hover
+@mixin hover-lift {
+    transition: transform 0.3s, box-shadow 0.3s;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: $shadow-lg;
+    }
+}
